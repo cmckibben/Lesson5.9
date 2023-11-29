@@ -3,7 +3,13 @@ package org.example;
 public class Pokemon {
     private int attack = 10;
     private String name;
-
+    public int setAttack(int attack) {
+        this.attack = attack;
+        return this.attack;
+    }
+    public int getAttack() {
+      return attack;
+    }
     public Pokemon(int attack, String name) {
       this.attack = attack;
       this.name = name;
@@ -22,11 +28,5 @@ public class Pokemon {
     public String getName() {
       return name;
     }
-    public int setAttack(int attack) {
-        this.attack = attack;
-        return this.attack;
-    }
-    public int getAttack() {
-      return attack;
-    }
+
 }
